@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Khun Kyaw Tun - Personal Website</title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<script>tailwind.config={theme:{extend:{colors:{primary:'#3b82f6',secondary:'#64748b'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+body {
+font-family: 'Poppins', sans-serif;
+scroll-behavior: smooth;
+}
+.custom-shadow {
+box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+.progress-bar {
+height: 8px;
+background-color: #e5e7eb;
+border-radius: 4px;
+overflow: hidden;
+}
+.progress-fill {
+height: 100%;
+border-radius: 4px;
+transition: width 1s ease-in-out;
+}
+input:focus, textarea:focus {
+outline: none;
+border-color: #3b82f6;
+}
+.nav-link.active {
+color: #3b82f6;
+font-weight: 500;
+}
+.nav-link::after {
+content: '';
+display: block;
+width: 0;
+height: 2px;
+background: #3b82f6;
+transition: width 0.3s;
+}
+.nav-link.active::after, .nav-link:hover::after {
+width: 100%;
+}
+</style>
+</head>
+<body class="bg-white">
+<!-- Header -->
+<header class="fixed top-0 left-0 right-0 bg-white z-50 shadow-sm">
+<div class="container mx-auto px-6 py-4 flex justify-between items-center">
+<a href="#" class="text-2xl font-['Pacifico'] text-primary">Khun Kyaw Tun</a>
+<nav class="hidden md:flex space-x-8">
+<a href="#profile" class="nav-link text-gray-700 hover:text-primary transition-colors">Profile</a>
+<a href="#working" class="nav-link text-gray-700 hover:text-primary transition-colors">Working</a>
+<a href="#skills" class="nav-link text-gray-700 hover:text-primary transition-colors">Skills</a>
+<a href="#contact" class="nav-link text-gray-700 hover:text-primary transition-colors">Contact</a>
+</nav>
+<div class="md:hidden w-10 h-10 flex items-center justify-center cursor-pointer">
+<i class="ri-menu-line text-gray-700 ri-lg"></i>
+</div>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="pt-24 pb-16 md:pt-32 md:pb-24 relative overflow-hidden">
+<div class="absolute inset-0 z-0" style="background-image: url('https://public.readdy.ai/ai/img_res/b3cd4a719618ae628a6f7f20af1006a0.jpg'); background-size: cover; background-position: center; opacity: 0.15;"></div>
+<div class="container mx-auto px-6 relative z-10">
+<div class="flex flex-col md:flex-row items-center">
+<div class="w-full md:w-1/2 mb-10 md:mb-0">
+<div class="flex items-center mb-3">
+<span class="text-sm font-medium bg-blue-100 text-primary px-3 py-1 rounded-full">From Myanmar</span>
+</div>
+<h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4">KHUN KYAW TUN</h1>
+<p class="text-lg text-gray-600 mb-8 max-w-lg">A passionate professional dedicated to creating impactful solutions through innovation and expertise.</p>
+<div class="flex space-x-4">
+<a href="#contact" class="bg-primary text-white px-6 py-3 !rounded-button font-medium hover:bg-blue-600 transition-colors whitespace-nowrap">Get in Touch</a>
+<a href="#working" class="border border-gray-300 text-gray-700 px-6 py-3 !rounded-button font-medium hover:bg-gray-50 transition-colors whitespace-nowrap">View Work</a>
+</div>
+</div>
+<div class="w-full md:w-1/2 flex justify-center">
+<div class="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white shadow-xl">
+<img src="https://scontent-ist1-2.xx.fbcdn.net/v/t39.30808-6/474962926_580906544759929_7246355766433544791_n.jpg?stp=c0.277.1080.1080a_dst-jpg_s552x414_tt6&_nc_cat=107&ccb=1-7&_nc_sid=50ad20&_nc_ohc=IYQnqJOJiJkQ7kNvwHodzaz&_nc_oc=Adm2W8y0iPwe4FU2LgOaguY0B23Bfmb8wQwZ-kZTyTmbh3NlaZl0_99MItwzcxStCD8&_nc_zt=23&_nc_ht=scontent-ist1-2.xx&_nc_gid=dTLWmM_S1gB2TRsc2_XWSw&oh=00_AfEKzDRscOkcV9GATnGi8pjsgOL2ehaN9TfboWe1PhXF7g&oe=67F9E44F" alt="Khun Kyaw Tun" class="w-full h-full object-cover object-top">
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Profile Section -->
+<section id="profile" class="py-16 md:py-24 bg-gray-50">
+<div class="container mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-3">About Me</h2>
+<div class="w-20 h-1 bg-primary mx-auto"></div>
+</div>
+<div class="flex flex-col md:flex-row items-center">
+<div class="w-full md:w-2/5 mb-10 md:mb-0">
+<div class="rounded-lg overflow-hidden shadow-lg">
+<img src="https://scontent-ist1-1.xx.fbcdn.net/v/t39.30808-6/475064543_580906348093282_7126629094062325592_n.jpg?stp=dst-jpg_s417x417_tt6&_nc_cat=111&ccb=1-7&_nc_sid=50ad20&_nc_ohc=6NIGFsb83nUQ7kNvwE9o1b7&_nc_oc=Adklu8SsZWLXpn0hAyq4xxP5YOgQKKBEpnFvLjAlhhlN_UVj2bRh_U2jgqI33_h86ZU&_nc_zt=23&_nc_ht=scontent-ist1-1.xx&_nc_gid=yR2spTRC-ym5EBKpFMc3oQ&oh=00_AfE0_HPK2yfft0kkIdCz660C4yRCFiJSXBDj1HVyDdtEZQ&oe=67F9D7A3">
+</div>
+</div>
+<div class="w-full md:w-3/5 md:pl-16">
+<h3 class="text-2xl font-semibold text-gray-900 mb-4">Hello, I'm Khun Kyaw Tun</h3>
+<p class="text-gray-600 mb-6 leading-relaxed">Born and raised in the beautiful country of Myanmar, I've built my career around creating innovative solutions that make a difference. With over 8 years of experience in my field, I combine technical expertise with creative thinking to deliver exceptional results.</p>
+<p class="text-gray-600 mb-8 leading-relaxed">My journey has taken me through various challenges and opportunities, each contributing to my growth both professionally and personally. I believe in continuous learning and staying updated with the latest trends and technologies in my industry.</p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+<div class="flex items-start">
+<div class="w-10 h-10 flex items-center justify-center bg-blue-100 rounded-full mr-3">
+<i class="ri-map-pin-line text-primary"></i>
+</div>
+<div>
+<h4 class="font-medium text-gray-900">Location</h4>
+<p class="text-gray-600">HTI KHAR village , TAUNGGYI Township , South Of Shan State , Myanmar</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-10 h-10 flex items-center justify-center bg-blue-100 rounded-full mr-3">
+<i class="ri-mail-line text-primary"></i>
+</div>
+<div>
+<h4 class="font-medium text-gray-900"> Email</h4>
+<p class="text-gray-600">yaungni2002@gmail.com</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-10 h-10 flex items-center justify-center bg-blue-100 rounded-full mr-3">
+<i class="ri-briefcase-line text-primary"></i>
+</div>
+<div>
+<h4 class="font-medium text-gray-900">Experience</h4>
+<p class="text-gray-600">8+ Years</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-10 h-10 flex items-center justify-center bg-blue-100 rounded-full mr-3">
+<i class="ri-translate-2-line text-primary"></i>
+</div>
+<div>
+<h4 class="font-medium text-gray-900">Languages</h4>
+<p class="text-gray-600">English, Burmese, Japanese (n4) </p>
+</div>
+</div>
+</div>
+<div class="flex space-x-4">
+<a href="https://www.linkedin.com/in/khunkyawtun" class="w-10 h-10 flex items-center justify-center rounded-full border border-gray-300 text-gray-600 hover:border-primary hover:text-primary transition-colors">
+<i class="ri-linkedin-fill"></i>
+</a>
+<a href="https://www.facebook.com/share/1ZWW8YMc4y/" class="w-10 h-10 flex items-center justify-center rounded-full border border-gray-300 text-gray-600 hover:border-primary hover:text-primary transition-colors">
+<i class="ri-facebook-fill"></i>
+</a>
+<a href="https://wa.me/qr/SHUFIXRFUQHXE1" class="w-10 h-10 flex items-center justify-center rounded-full border border-gray-300 text-gray-600 hover:border-primary hover:text-primary transition-colors">
+<i class="ri-whatsapp-fill"></i>
+</a>
+<a href="https://www.instagram.com/yaungni808?igsh=cGwyNm95bGF3empn" class="w-10 h-10 flex items-center justify-center rounded-full border border-gray-300 text-gray-600 hover:border-primary hover:text-primary transition-colors">
+<i class="ri-instagram-fill"></i>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Working Experience Section -->
+<section id="working" class="py-16 md:py-24">
+<div class="container mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-3">Work Experience</h2>
+<div class="w-20 h-1 bg-primary mx-auto"></div>
+</div>
+<div class="relative">
+<!-- Timeline line -->
+<div class="hidden md:block absolute left-1/2 top-0 bottom-0 w-0.5 bg-gray-200 transform -translate-x-1/2"></div>
+<!-- Experience Items -->
+<div class="space-y-12">
+<!-- Experience 1 -->
+<div class="flex flex-col md:flex-row items-center">
+<div class="w-full md:w-1/2 md:pr-16 md:text-right mb-8 md:mb-0">
+<span class="inline-block px-3 py-1 bg-blue-100 text-primary text-sm font-medium rounded-full mb-2">2022 - Present</span>
+<h3 class="text-xl font-semibold text-gray-900 mb-1">Senior Project Manager</h3>
+<p class="text-gray-600 mb-4">Myanmar Digital Solutions, Yangon</p>
+<p class="text-gray-600">Leading cross-functional teams to deliver complex digital transformation projects for enterprise clients. Implemented agile methodologies that improved project delivery times by 30%.</p>
+</div>
+<div class="hidden md:flex w-10 h-10 bg-primary rounded-full items-center justify-center relative z-10">
+<i class="ri-briefcase-line text-white"></i>
+</div>
+<div class="w-full md:w-1/2 md:pl-16">
+<div class="bg-white p-6 rounded-lg shadow-md custom-shadow">
+<h4 class="font-medium text-gray-900 mb-3">Key Achievements:</h4>
+<ul class="space-y-2 text-gray-600">
+<li class="flex items-start">
+<i class="ri-check-line text-primary mt-1 mr-2"></i>
+<span>Successfully delivered 5 major projects with 100% client satisfaction</span>
+</li>
+<li class="flex items-start">
+<i class="ri-check-line text-primary mt-1 mr-2"></i>
+<span>Managed a team of 15 professionals across different departments</span>
+</li>
+<li class="flex items-start">
+<i class="ri-check-line text-primary mt-1 mr-2"></i>
+<span>Reduced project costs by 20% through process optimization</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<!-- Experience 2 -->
+<div class="flex flex-col md:flex-row items-center">
+<div class="w-full md:w-1/2 md:pr-16 md:text-right order-1 md:order-1 mb-8 md:mb-0">
+<div class="bg-white p-6 rounded-lg shadow-md custom-shadow">
+<h4 class="font-medium text-gray-900 mb-3">Key Achievements:</h4>
+<ul class="space-y-2 text-gray-600">
+<li class="flex items-start md:justify-end">
+<span class="md:order-2">Developed and implemented project management framework</span>
+<i class="ri-check-line text-primary mt-1 mr-2 md:ml-2 md:mr-0 md:order-1"></i>
+</li>
+<li class="flex items-start md:justify-end">
+<span class="md:order-2">Led a successful system migration for a major client</span>
+<i class="ri-check-line text-primary mt-1 mr-2 md:ml-2 md:mr-0 md:order-1"></i>
+</li>
+<li class="flex items-start md:justify-end">
+<span class="md:order-2">Received "Employee of the Year" award in 2020</span>
+<i class="ri-check-line text-primary mt-1 mr-2 md:ml-2 md:mr-0 md:order-1"></i>
+</li>
+</ul>
+</div>
+</div>
+<div class="hidden md:flex w-10 h-10 bg-primary rounded-full items-center justify-center relative z-10">
+<i class="ri-briefcase-line text-white"></i>
+</div>
+<div class="w-full md:w-1/2 md:pl-16 order-0 md:order-2">
+<span class="inline-block px-3 py-1 bg-blue-100 text-primary text-sm font-medium rounded-full mb-2">2019 - 2022</span>
+<h3 class="text-xl font-semibold text-gray-900 mb-1">Project Manager</h3>
+<p class="text-gray-600 mb-4">Tech Innovators Myanmar, Mandalay</p>
+<p class="text-gray-600">Managed multiple technology implementation projects for clients in the financial and healthcare sectors. Coordinated with stakeholders to ensure project requirements were met.</p>
+</div>
+</div>
+<!-- Experience 3 -->
+<div class="flex flex-col md:flex-row items-center">
+<div class="w-full md:w-1/2 md:pr-16 md:text-right mb-8 md:mb-0">
+<span class="inline-block px-3 py-1 bg-blue-100 text-primary text-sm font-medium rounded-full mb-2">2017 - 2019</span>
+<h3 class="text-xl font-semibold text-gray-900 mb-1">Business Analyst</h3>
+<p class="text-gray-600 mb-4">Myanmar IT Solutions, Yangon</p>
+<p class="text-gray-600">Analyzed business requirements and translated them into technical specifications. Worked closely with development teams to ensure solutions met client needs.</p>
+</div>
+<div class="hidden md:flex w-10 h-10 bg-primary rounded-full items-center justify-center relative z-10">
+<i class="ri-briefcase-line text-white"></i>
+</div>
+<div class="w-full md:w-1/2 md:pl-16">
+<div class="bg-white p-6 rounded-lg shadow-md custom-shadow">
+<h4 class="font-medium text-gray-900 mb-3">Key Achievements:</h4>
+<ul class="space-y-2 text-gray-600">
+<li class="flex items-start">
+<i class="ri-check-line text-primary mt-1 mr-2"></i>
+<span>Improved requirements gathering process, reducing rework by 40%</span>
+</li>
+<li class="flex items-start">
+<i class="ri-check-line text-primary mt-1 mr-2"></i>
+<span>Created comprehensive documentation that became company standard</span>
+</li>
+<li class="flex items-start">
+<i class="ri-check-line text-primary mt-1 mr-2"></i>
+<span>Facilitated workshops that improved stakeholder communication</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Skills Section -->
+<section id="skills" class="py-16 md:py-24 bg-gray-50">
+<div class="container mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-3">My Skills</h2>
+<div class="w-20 h-1 bg-primary mx-auto"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<!-- Technical Skills -->
+<div>
+<h3 class="text-xl font-semibold text-gray-900 mb-6 flex items-center">
+<div class="w-10 h-10 flex items-center justify-center bg-blue-100 rounded-full mr-3">
+<i class="ri-code-line text-primary"></i>
+</div>
+Technical Skills
+</h3>
+<div class="space-y-6">
+<div>
+<div class="flex justify-between mb-1">
+<span class="text-gray-700 font-medium">Project Management</span>
+<span class="text-gray-600">95%</span>
+</div>
+<div class="progress-bar">
+<div class="progress-fill bg-primary" style="width: 95%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between mb-1">
+<span class="text-gray-700 font-medium">Business Analysis</span>
+<span class="text-gray-600">90%</span>
+</div>
+<div class="progress-bar">
+<div class="progress-fill bg-primary" style="width: 90%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between mb-1">
+<span class="text-gray-700 font-medium">Agile Methodologies</span>
+<span class="text-gray-600">85%</span>
+</div>
+<div class="progress-bar">
+<div class="progress-fill bg-primary" style="width: 85%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between mb-1">
+<span class="text-gray-700 font-medium">Data Analysis</span>
+<span class="text-gray-600">80%</span>
+</div>
+<div class="progress-bar">
+<div class="progress-fill bg-primary" style="width: 80%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between mb-1">
+<span class="text-gray-700 font-medium">Microsoft Office Suite</span>
+<span class="text-gray-600">95%</span>
+</div>
+<div class="progress-bar">
+<div class="progress-fill bg-primary" style="width: 95%"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Soft Skills -->
+<div>
+<h3 class="text-xl font-semibold text-gray-900 mb-6 flex items-center">
+<div class="w-10 h-10 flex items-center justify-center bg-blue-100 rounded-full mr-3">
+<i class="ri-user-heart-line text-primary"></i>
+</div>
+Soft Skills
+</h3>
+<div class="space-y-6">
+<div>
+<div class="flex justify-between mb-1">
+<span class="text-gray-700 font-medium">Leadership</span>
+<span class="text-gray-600">90%</span>
+</div>
+<div class="progress-bar">
+<div class="progress-fill bg-primary" style="width: 90%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between mb-1">
+<span class="text-gray-700 font-medium">Communication</span>
+<span class="text-gray-600">95%</span>
+</div>
+<div class="progress-bar">
+<div class="progress-fill bg-primary" style="width: 95%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between mb-1">
+<span class="text-gray-700 font-medium">Problem Solving</span>
+<span class="text-gray-600">85%</span>
+</div>
+<div class="progress-bar">
+<div class="progress-fill bg-primary" style="width: 85%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between mb-1">
+<span class="text-gray-700 font-medium">Team Management</span>
+<span class="text-gray-600">90%</span>
+</div>
+<div class="progress-bar">
+<div class="progress-fill bg-primary" style="width: 90%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between mb-1">
+<span class="text-gray-700 font-medium">Adaptability</span>
+<span class="text-gray-600">85%</span>
+</div>
+<div class="progress-bar">
+<div class="progress-fill bg-primary" style="width: 85%"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Additional Skills -->
+<div class="mt-16">
+<h3 class="text-xl font-semibold text-gray-900 mb-8 text-center">Additional Skills</h3>
+<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+<div class="bg-white p-4 rounded-lg shadow-sm text-center hover:shadow-md transition-shadow">
+<div class="w-12 h-12 flex items-center justify-center bg-blue-100 rounded-full mx-auto mb-3">
+<i class="ri-presentation-line text-primary"></i>
+</div>
+<h4 class="font-medium text-gray-900">Presentations</h4>
+</div>
+<div class="bg-white p-4 rounded-lg shadow-sm text-center hover:shadow-md transition-shadow">
+<div class="w-12 h-12 flex items-center justify-center bg-blue-100 rounded-full mx-auto mb-3">
+<i class="ri-funds-line text-primary"></i>
+</div>
+<h4 class="font-medium text-gray-900">Budgeting</h4>
+</div>
+<div class="bg-white p-4 rounded-lg shadow-sm text-center hover:shadow-md transition-shadow">
+<div class="w-12 h-12 flex items-center justify-center bg-blue-100 rounded-full mx-auto mb-3">
+<i class="ri-team-line text-primary"></i>
+</div>
+<h4 class="font-medium text-gray-900">Team Building</h4>
+</div>
+<div class="bg-white p-4 rounded-lg shadow-sm text-center hover:shadow-md transition-shadow">
+<div class="w-12 h-12 flex items-center justify-center bg-blue-100 rounded-full mx-auto mb-3">
+<i class="ri-customer-service-2-line text-primary"></i>
+</div>
+<h4 class="font-medium text-gray-900">Client Relations</h4>
+</div>
+<div class="bg-white p-4 rounded-lg shadow-sm text-center hover:shadow-md transition-shadow">
+<div class="w-12 h-12 flex items-center justify-center bg-blue-100 rounded-full mx-auto mb-3">
+<i class="ri-time-line text-primary"></i>
+</div>
+<h4 class="font-medium text-gray-900">Time Management</h4>
+</div>
+<div class="bg-white p-4 rounded-lg shadow-sm text-center hover:shadow-md transition-shadow">
+<div class="w-12 h-12 flex items-center justify-center bg-blue-100 rounded-full mx-auto mb-3">
+<i class="ri-global-line text-primary"></i>
+</div>
+<h4 class="font-medium text-gray-900">Cross-cultural</h4>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section id="contact" class="py-16 md:py-24">
+<div class="container mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-3">Get In Touch</h2>
+<div class="w-20 h-1 bg-primary mx-auto"></div>
+</div>
+<div class="flex flex-col md:flex-row gap-12">
+<div class="w-full md:w-1/2">
+<h3 class="text-2xl font-semibold text-gray-900 mb-6">Contact Information</h3>
+<div class="space-y-6 mb-8">
+<div class="flex items-start">
+<div class="w-12 h-12 flex items-center justify-center bg-blue-100 rounded-full mr-4">
+<i class="ri-map-pin-line text-primary ri-lg"></i>
+</div>
+<div>
+<h4 class="font-medium text-gray-900 mb-1">Location</h4>
+<p class="text-gray-600">HTI KHAR village , TAUNGGYI Township , South Of Shan State , Myanmar</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-12 h-12 flex items-center justify-center bg-blue-100 rounded-full mr-4">
+<i class="ri-mail-line text-primary ri-lg"></i>
+</div>
+<div>
+<h4 class="font-medium text-gray-900 mb-1">Email</h4>
+<p class="text-gray-600">yaungni2002@gmail.com</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-12 h-12 flex items-center justify-center bg-blue-100 rounded-full mr-4">
+<i class="ri-phone-line text-primary ri-lg"></i>
+</div>
+<div>
+<h4 class="font-medium text-gray-900 mb-1">Phone</h4>
+<p class="text-gray-600">+95 9 754908394 <br> +905396905316 ( turkey , turkcell ) </p>
+</div>
+</div>
+</div>
+<h4 class="font-medium text-gray-900 mb-4">Connect with me</h4>
+<div class="flex space-x-4">
+<a href="https://www.linkedin.com/in/khunkyawtun" class="w-12 h-12 flex items-center justify-center rounded-full bg-blue-100 text-primary hover:bg-primary hover:text-white transition-colors">
+<i class="ri-linkedin-fill ri-lg"></i>
+</a>
+<a href="https://www.facebook.com/share/1ZWW8YMc4y/" class="w-12 h-12 flex items-center justify-center rounded-full bg-blue-100 text-primary hover:bg-primary hover:text-white transition-colors">
+<i class="ri-facebook-fill ri-lg"></i>
+</a>
+<a href="https://wa.me/qr/SHUFIXRFUQHXE1" class="w-12 h-12 flex items-center justify-center rounded-full bg-blue-100 text-primary hover:bg-primary hover:text-white transition-colors">
+<i class="ri-whatsapp-fill ri-lg"></i>
+</a>
+<a href="https://www.instagram.com/yaungni808?igsh=cGwyNm95bGF3empn" class="w-12 h-12 flex items-center justify-center rounded-full bg-blue-100 text-primary hover:bg-primary hover:text-white transition-colors">
+<i class="ri-instagram-fill ri-lg"></i>
+</a>
+</div>
+</div>
+<div class="w-full md:w-1/2">
+<div class="bg-white p-8 rounded-lg shadow-md custom-shadow">
+<h3 class="text-2xl font-semibold text-gray-900 mb-6">Send a Message</h3>
+<form>
+<div class="mb-6">
+<label for="name" class="block text-sm font-medium text-gray-700 mb-2">Your Name</label>
+<input type="text" id="name" class="w-full px-4 py-3 border border-gray-300 rounded focus:border-primary" placeholder="John Doe">
+</div>
+<div class="mb-6">
+<label for="email" class="block text-sm font-medium text-gray-700 mb-2">Your Email</label>
+<input type="email" id="email" class="w-full px-4 py-3 border border-gray-300 rounded focus:border-primary" placeholder="john@example.com">
+</div>
+<div class="mb-6">
+<label for="subject" class="block text-sm font-medium text-gray-700 mb-2">Subject</label>
+<input type="text" id="subject" class="w-full px-4 py-3 border border-gray-300 rounded focus:border-primary" placeholder="Project Inquiry">
+</div>
+<div class="mb-6">
+<label for="message" class="block text-sm font-medium text-gray-700 mb-2">Your Message</label>
+<textarea id="message" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded focus:border-primary" placeholder="Hello, I would like to discuss..."></textarea>
+</div>
+<button type="submit" class="w-full bg-primary text-white py-3 !rounded-button font-medium hover:bg-blue-600 transition-colors whitespace-nowrap">Send Message</button>
+</form>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-gray-900 text-white py-12">
+<div class="container mx-auto px-6">
+<div class="flex flex-col md:flex-row justify-between items-center">
+<div class="mb-6 md:mb-0">
+<a href="#" class="text-2xl font-['Pacifico'] text-white">Khun Kyaw</a>
+<p class="text-gray-400 mt-2">Professional Portfolio</p>
+</div>
+<div class="flex flex-wrap justify-center gap-4 mb-6 md:mb-0">
+<a href="#profile" class="text-gray-400 hover:text-white transition-colors">Profile</a>
+<a href="#working" class="text-gray-400 hover:text-white transition-colors">Working</a>
+<a href="#skills" class="text-gray-400 hover:text-white transition-colors">Skills</a>
+<a href="#contact" class="text-gray-400 hover:text-white transition-colors">Contact</a>
+</div>
+<div class="flex space-x-4">
+<a href="https://www.linkedin.com/in/khunkyawtun" class="text-gray-400 hover:text-white transition-colors">
+<i class="ri-linkedin-fill ri-lg"></i>
+</a>
+<a href="https://www.facebook.com/share/1ZWW8YMc4y/" class="text-gray-400 hover:text-white transition-colors">
+<i class="ri-facebook-fill ri-lg"></i>
+</a>
+<a href="https://wa.me/qr/SHUFIXRFUQHXE1" class="text-gray-400 hover:text-white transition-colors">
+<i class="ri-whatsapp-fill ri-lg"></i>
+</a>
+<a href="https://www.instagram.com/yaungni808?igsh=cGwyNm95bGF3empn" class="text-gray-400 hover:text-white transition-colors">
+<i class="ri-instagram-fill ri-lg"></i>
+</a>
+</div>
+</div>
+<div class="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+<p class="text-gray-400 text-sm mb-4 md:mb-0">© 2025 Khun Kyaw Tun. All rights reserved.</p>
+<p class="text-gray-400 text-sm flex items-center">
+<span class="mr-2">Made with</span>
+<i class="ri-heart-fill text-red-500"></i>
+<span class="ml-2">in Myanmar</span>
+</p>
+</div>
+</div>
+</footer>
+<script>
+// Mobile Menu Toggle
+const menuButton = document.querySelector('.ri-menu-line');
+const navLinks = document.querySelectorAll('.nav-link');
+// Active navigation link based on scroll position
+window.addEventListener('scroll', () => {
+const sections = document.querySelectorAll('section');
+const scrollPosition = window.scrollY + 100;
+sections.forEach(section => {
+const sectionTop = section.offsetTop;
+const sectionHeight = section.offsetHeight;
+const sectionId = section.getAttribute('id');
+if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+navLinks.forEach(link => {
+link.classList.remove('active');
+if (link.getAttribute('href') === `#${sectionId}`) {
+link.classList.add('active');
+}
+});
+}
+});
+});
+// Animate progress bars on scroll
+const progressBars = document.querySelectorAll('.progress-fill');
+const animateProgressBars = () => {
+progressBars.forEach(bar => {
+const rect = bar.getBoundingClientRect();
+if (rect.top < window.innerHeight && rect.bottom > 0) {
+const width = bar.parentElement.previousElementSibling.querySelector('span:last-child').textContent;
+bar.style.width = width;
+}
+});
+};
+window.addEventListener('scroll', animateProgressBars);
+window.addEventListener('load', animateProgressBars);
+// Smooth scroll for navigation links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+anchor.addEventListener('click', function(e) {
+e.preventDefault();
+const targetId = this.getAttribute('href');
+if (targetId === '#') return;
+const targetElement = document.querySelector(targetId);
+if (targetElement) {
+window.scrollTo({
+top: targetElement.offsetTop - 80,
+behavior: 'smooth'
+});
+}
+});
+});
+</script>
+</body>
+</html>
